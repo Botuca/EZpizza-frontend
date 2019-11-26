@@ -251,7 +251,7 @@
       irParaConfirmacao() {
         this.save();
         this.setSelectedTab(this.tabs[1]);
-        this.textoConfirmacao = 'Um email foi enviado para INSIRA EMAIL AQUI. Confirme seu pedido por lá :)'
+        this.textoConfirmacao = `Um email foi enviado para ${this.formCliente.email}. Confirme seu pedido por lá :)`;
       },
       save() {
         const saboresIds = this.selectedSabores.map(sabor => {
