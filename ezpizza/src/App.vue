@@ -1,33 +1,19 @@
 <template>
-  <v-app>
-    <v-app-bar
-      app
-      color="rgb(248, 248, 143)"
-    >
-      <h2>EzPizza</h2>
-    </v-app-bar>
+  <div>
+    <v-app>
+      <v-app-bar
+        app
+        color="rgb(248, 248, 143)"
+      >
+        <h2>EzPizza</h2>
+      </v-app-bar>
 
-    <v-content class="color-site">
-      <home/>
-    </v-content>
-  </v-app>
+      <v-content class="color-site">
+        <router-view color-site/>
+      </v-content>
+    </v-app>
+  </div>
 </template>
-
-<script>
-import Home from './components/home';
-
-export default {
-  name: 'App',
-
-  components: {
-    Home,
-  },
-
-  data: () => ({
-    //
-  }),
-};
-</script>
 
 <style lang="scss" scoped>
 .color-site {
