@@ -250,7 +250,7 @@
       },
       irParaConfirmacao() {
         this.save();
-        this.setSelectedTab(this.tabs[2]);
+        this.setSelectedTab(this.tabs[1]);
         this.textoConfirmacao = 'Um email foi enviado para INSIRA EMAIL AQUI. Confirme seu pedido por lá :)'
       },
       save() {
